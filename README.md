@@ -132,4 +132,3 @@ Dark mode works out of the box using CSS `@media (prefers-color-scheme: dark)`.
 This project is licensed under the MIT License.
 
 ```
-```
