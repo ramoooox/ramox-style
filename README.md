@@ -14,37 +14,43 @@
 
 ---
 
-Ramox UI is a **zero-runtime React component library** designed specifically for **Next.js**, focused on a *Flat Precision* interface with fully-rounded pill-style elements.  
-Ideal for Cloudflare Pages, ultra-light UI systems, dashboards, and modern app design.
+## 🔥 Overview
+
+Ramox UI is a **zero-runtime React UI library** built for **Next.js**, designed around a fully rounded *pill-shape aesthetic* with a flat, shadow-less look.  
+Perfect for Cloudflare Pages, clean dashboards, minimal design systems, and fast UI.
 
 ---
 
-## ✨ Features
+## ⭐ Key Features
 
-| Feature | Description |
-|--------|-------------|
-| 🚫 **Zero Runtime CSS** | No CSS-in-JS overhead, no runtime style injection |
-| 🟢 **Pill-Shaped UI** | Fully rounded edges (9999px) on *everything* |
-| 🌗 **Auto Dark Mode** | Follows OS theme — no config required |
-| ⚪ **Flat Precision UI** | No shadows. No 3D. Clean + Minimal |
-| 🅰 **Font Agnostic** | Uses your global font — not locked |
-| 📱 **Mobile First** | Better touch hit-zones + no tap highlights |
+- Zero Runtime CSS — Fast. Lightweight.
+- 9999px Pill-Shaped UI — Everywhere.
+- Automatic Dark / Light Mode (OS-Synced)
+- Font-Inheriting (no bundled font)
+- Perfect for Mobile UI & Touch Inputs
+- Modern Flat-Precision Aesthetic
 
 ---
 
-## 📦 Installation
+## 📦 Installation *(Fully Separated)*
+
+### 1️⃣ Install Core Package
 
 ```bash
 npm install @ramox/rx-style
 
-Recommended for icons (optional):
+2️⃣ (Optional) Add Icons Support
 
 npm install lucide-react
+
+3️⃣ Import Components — No CSS Needed
+
+import { Button, Card, Input, Note } from '@ramox/rx-style';
 
 
 ---
 
-🚀 Quick Usage
+🚀 Quick Start Example
 
 import { Button, Card, Input, Note } from '@ramox/rx-style';
 
@@ -52,12 +58,12 @@ export default function App() {
   return (
     <div style={{ padding: 20 }}>
       <Card>
-        <h2>Welcome to Ramox</h2>
-        <Note>Ultra-flat UI with Zero Runtime CSS</Note>
+        <h2>Welcome to Ramox UI</h2>
+        <Note>Ultra-flat interface with no runtime CSS</Note>
 
-        <Input placeholder="Email..." style={{ margin: '20px 0' }} />
+        <Input placeholder="Type here..." style={{ margin: '20px 0' }} />
 
-        <Button variant="solid" onClick={() => alert("Hello!")}>
+        <Button variant="solid" onClick={() => alert("Clicked!")}>
           Get Started
         </Button>
       </Card>
@@ -68,90 +74,67 @@ export default function App() {
 
 ---
 
-📁 Components Overview
+🧩 Components
 
 General UI
 
-Button — Solid / Soft / Outline / Ghost
+Button · Tag · Badge · StatusDot · Note
 
-Tag, Badge, StatusDot, Note
+Forms & Inputs
 
+Input · Textarea · Select
+Switch · Checkbox · Radio
+Slider · Rating
+FileUploader · DatePicker
 
-Form & Input
+Feedback & Overlay
 
-Input, Textarea, Select
+Modal · Drawer
+Alert · Toast
+Skeleton · Loading · Tooltip
 
-Switch, Checkbox, Radio
+Data & Layout
 
-Slider, Rating
-
-FileUploader, DatePicker
-
-
-Overlay & Feedback
-
-Modal, Drawer
-
-Alert, Toast
-
-Skeleton, Loading
-
-Tooltip
-
-
-Display & Layout
-
-Card, Table, Timeline
-
-Chart (simple bar chart)
-
-Glass (frosted blur container)
-
+Card · Table · Timeline · Chart
+Glass (blur container)
 
 Media
 
-VideoPlayer
-
-Avatar, AvatarGroup
-
-ImageBox
-
-CodeSnippet
-
+VideoPlayer · Avatar · AvatarGroup
+ImageBox · CodeSnippet
 
 
 ---
 
 🎨 Theming
 
-Global Font Control
+Font Control (Fully Manual — No Bundled Font)
 
-Ramox UI does not include fonts — it inherits yours.
-
-/* globals.css */
 body {
   font-family: "Inter", sans-serif;
 }
 
-Light + Dark Mode Support
+Light & Dark Palettes
 
-Mode	Colors Used
+Mode	Background	Surface	Text
 
-Light	#ffffff, #f4f4f5, #000000
-Dark	#000000, #18181b, #ffffff
+Light	#ffffff	#f4f4f5	#000000
+Dark	#000000	#18181b	#ffffff
 
 
-Automatically adapts using prefers-color-scheme.
+Dark mode is automatic using prefers-color-scheme.
 
 
 ---
 
 📄 License
 
-Released under the MIT License — free for commercial and open-source use.
+MIT Licensed — Free for commercial + open-source use.
 
 
 ---
 
-<div align="center"><b>Ramox UI — Flat. Precise. Pill-Shaped.</b></div>
+<div align="center">
+  <strong>Ramox UI — Flat. Precise. Beautifully Rounded.</strong>
+</div>
 ```
