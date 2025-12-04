@@ -3,67 +3,84 @@
 <div align="center">
   <img src="./rx.png" width="150" alt="Ramox UI Logo" />
   <h3><strong>Ultra-Flat • Pill-Shaped • Precision UI for Next.js</strong></h3>
+  <p>Zero-runtime, fast, modern and beautifully rounded interface components.</p>
 </div>
 
+<br/>
+
 <p align="center">
-  <img src="https://img.shields.io/badge/version-5.1.1-black?style=flat-square" />
-  <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" />
-  <img src="https://img.shields.io/badge/style-Pill_Shape-success?style=flat-square" />
-  <img src="https://img.shields.io/badge/size-Lightweight-orange?style=flat-square" />
+  <img src="https://img.shields.io/badge/version-5.1.1-black?style=flat-square">
+  <img src="https://img.shields.io/badge/license-MIT-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/design-PillShape-success?style=flat-square">
+  <img src="https://img.shields.io/badge/runtime-ZeroCSS-red?style=flat-square">
 </p>
 
 ---
 
-## 🔥 Overview
+## 📌 Overview
 
-Ramox UI is a **zero-runtime React UI library** built for **Next.js**, designed around a fully rounded *pill-shape aesthetic* with a flat, shadow-less look.  
-Perfect for Cloudflare Pages, clean dashboards, minimal design systems, and fast UI.
+Ramox UI is a **fully-rounded pill-style design system** built for **Next.js + React**.  
+It ships with **Zero Runtime CSS**, automatic **Dark Mode**, and a clean, shadowless **Flat Precision** UI.
 
----
-
-## ⭐ Key Features
-
-- Zero Runtime CSS — Fast. Lightweight.
-- 9999px Pill-Shaped UI — Everywhere.
-- Automatic Dark / Light Mode (OS-Synced)
-- Font-Inheriting (no bundled font)
-- Perfect for Mobile UI & Touch Inputs
-- Modern Flat-Precision Aesthetic
+Perfect for Cloudflare Pages, dashboards, SaaS panels, mobile-first apps, and minimal UIs.
 
 ---
 
-## 📦 Installation *(Fully Separated)*
+## 🚀 Features
 
-### 1️⃣ Install Core Package
+| Feature | Description |
+|--------|-------------|
+| ⚡ Zero Runtime CSS | no CSS-in-JS, no injection cost |
+| 🔵 Fully Pill Shaped UI | 9999px radius everywhere |
+| 🌗 Auto Dark Mode | syncs with OS theme — no config |
+| 🔥 Featherlight Size | minimal bundle impact |
+| 🅰 Font Agnostic | inherits your global font |
+| 📱 Mobile First | natural touch feel, no tap highlight |
+
+---
+
+# 📦 Installation  *(Fully separated — clean steps)*
+
+---
+
+### 🔹 Step 1 — Install Core Package
 
 ```bash
 npm install @ramox/rx-style
 
-2️⃣ (Optional) Add Icons Support
+
+---
+
+🔹 Step 2 — (Optional) Install Icons Support
+
+If you want icons as used in examples & docs:
 
 npm install lucide-react
 
-3️⃣ Import Components — No CSS Needed
+
+---
+
+🔹 Step 3 — Import Components
+
+No CSS file, no provider, no setup.
 
 import { Button, Card, Input, Note } from '@ramox/rx-style';
 
 
 ---
 
-🚀 Quick Start Example
-
-import { Button, Card, Input, Note } from '@ramox/rx-style';
+🧪 Quick Usage Example
 
 export default function App() {
   return (
     <div style={{ padding: 20 }}>
       <Card>
         <h2>Welcome to Ramox UI</h2>
-        <Note>Ultra-flat interface with no runtime CSS</Note>
+        <Note>Ultra-flat interface with zero-runtime styling</Note>
 
-        <Input placeholder="Type here..." style={{ margin: '20px 0' }} />
+        <Input placeholder="Email..." style={{ margin: '20px 0' }} />
 
-        <Button variant="solid" onClick={() => alert("Clicked!")}>
+        <Button variant="solid" onClick={() => alert("Hello!")}>
           Get Started
         </Button>
       </Card>
@@ -74,47 +91,70 @@ export default function App() {
 
 ---
 
-🧩 Components
+📁 Components Library
 
-General UI
 
-Button · Tag · Badge · StatusDot · Note
+---
 
-Forms & Inputs
+🎛 General UI
 
-Input · Textarea · Select
-Switch · Checkbox · Radio
-Slider · Rating
-FileUploader · DatePicker
+✔ Button (Solid / Soft / Outline / Ghost)
+✔ Tag · Badge
+✔ StatusDot · Note
 
-Feedback & Overlay
 
-Modal · Drawer
-Alert · Toast
-Skeleton · Loading · Tooltip
+---
 
-Data & Layout
+📝 Inputs & Forms
 
-Card · Table · Timeline · Chart
-Glass (blur container)
+✔ Input · Textarea · Select
+✔ Switch · Checkbox · Radio
+✔ Slider · Rating
+✔ FileUploader · DatePicker
 
-Media
 
-VideoPlayer · Avatar · AvatarGroup
-ImageBox · CodeSnippet
+---
+
+🔔 Feedback / Overlay
+
+✔ Modal · Drawer
+✔ Alert · Toast
+✔ Skeleton · Loading · Tooltip
+
+
+---
+
+📊 Data Display
+
+✔ Card · Table
+✔ Timeline · Chart (Bar)
+✔ Glass (Blur surface)
+
+
+---
+
+🎥 Media + Code
+
+✔ VideoPlayer
+✔ Avatar · AvatarGroup
+✔ ImageBox
+✔ CodeSnippet
 
 
 ---
 
 🎨 Theming
 
-Font Control (Fully Manual — No Bundled Font)
+Font Styling (Fully manual — never forced)
 
 body {
   font-family: "Inter", sans-serif;
 }
 
-Light & Dark Palettes
+
+---
+
+Light & Dark Mode Support
 
 Mode	Background	Surface	Text
 
@@ -122,19 +162,21 @@ Light	#ffffff	#f4f4f5	#000000
 Dark	#000000	#18181b	#ffffff
 
 
-Dark mode is automatic using prefers-color-scheme.
+Ramox UI automatically switches using prefers-color-scheme.
 
 
 ---
 
-📄 License
+📜 License
 
-MIT Licensed — Free for commercial + open-source use.
+Released under the MIT License — free for commercial + open-source use.
 
 
 ---
 
 <div align="center">
   <strong>Ramox UI — Flat. Precise. Beautifully Rounded.</strong>
+  <br>
+  <sub>Minimal Design · Max Comfort · Zero Runtime</sub>
 </div>
 ```
