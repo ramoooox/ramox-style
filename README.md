@@ -1,58 +1,100 @@
- #RAMOX_UI
+در گیت‌هاب (GitHub Markdown)، امکان استفاده از کدهای **CSS مستقیم** (مثل `style="color: red"`) وجود ندارد، زیرا گیت‌هاب آن‌ها را به دلایل امنیتی پاک می‌کند.
 
+اما\! می‌توانیم با استفاده از **ترفندهای HTML**، **جدول‌بندی (Tables)**، **ایموجی‌ها** و **بج‌های رنگی (Shields)**، ظاهری بسیار شیک، مرتب و "استایل‌دار" به آن بدهیم.
+
+این نسخه "زیباسازی شده" با ساختار جدید است. تمام متن زیر را کپی کنید:
+
+-----
+
+````markdown
 <div align="center">
-  <img src="./rx.png" alt="Ramox UI Logo" width="150" />
+
+  <img src="./rx.png" alt="Ramox UI Logo" width="180" />
+
+  # Ramox UI v5.1
+
+  **The Ultra-Flat, Precision Design System for Next.js**
+
+  <p>
+    <a href="#">
+      <img src="https://img.shields.io/badge/VERSION-5.1.1-black?style=for-the-badge&logo=npm" alt="Version" />
+    </a>
+    <a href="#">
+      <img src="https://img.shields.io/badge/LICENSE-MIT-blue?style=for-the-badge" alt="License" />
+    </a>
+    <a href="#">
+      <img src="https://img.shields.io/badge/STYLE-PILL%20SHAPE-success?style=for-the-badge" alt="Style" />
+    </a>
+    <a href="#">
+      <img src="https://img.shields.io/badge/SIZE-LIGHTWEIGHT-orange?style=for-the-badge" alt="Size" />
+    </a>
+  </p>
+
+  <p>
+    Ramox UI is a zero-runtime React component library designed for <b>Cloudflare Pages</b>.<br/>
+    It features a <b>"Flat Precision"</b> aesthetic with matte finishes and fully rounded corners.
+  </p>
+
   <br/>
-  <br/>
+
 </div>
 
-**The Ultra-Flat, Precision Design System for Next.js**
+---
 
-**Ramox UI** is a lightweight, zero-runtime React component library designed specifically for **Next.js** applications deployed on platforms like **Cloudflare Pages** or Vercel. It features a "Flat Precision" aesthetic with fully rounded (pill-shaped) elements, matte finishes, and zero layout shifts.
+## ✨ Features at a Glance
 
-## ✨ Features
+| Feature | Description |
+| :--- | :--- |
+| **🚀 Zero Runtime** | Styles are injected efficiently without heavy CSS-in-JS overhead. |
+| **💊 Pill Shaped** | Every element (Buttons, Inputs, Modals) features smooth `9999px` corners. |
+| **🌑 Auto Theme** | Automatically syncs with OS Dark/Light mode preferences. |
+| **🎨 Flat Precision** | Zero shadows. Zero 3D effects. Just pure, precise borders. |
+| **🔤 Font Agnostic** | Inherits your app's font family automatically. |
+| **📱 Mobile First** | Optimized touch targets and removed Webkit tap highlights. |
 
-  - **🚀 Zero Runtime CSS:** Styles are injected efficiently without heavy CSS-in-JS runtime overhead.
-  - **💊 Pill-Shaped Design:** Every interactive element (Buttons, Inputs, Modals) features smooth, fully rounded corners (9999px).
-  - **🌑 Auto Dark Mode:** Automatically syncs with the user's system preference (OS Theme). No configuration required.
-  - **🎨 Flat Precision:** Removed shadows and 3D effects for a clean, precise, and modern look.
-  - **🔤 Font Agnostic:** Components inherit the font-family from your application body. No font locking.
-  - **📱 Mobile First:** Optimized touch targets and removed Webkit tap highlights.
+<br/>
 
 ## 📦 Installation
 
-Install the package via npm:
+Get started instantly via NPM:
 
 ```bash
 npm install @ramox/rx-style
-```
+````
 
-*(Optional) We recommend installing `lucide-react` for icons if you want to match the documentation style:*
+*(Optional) Install icons for full compatibility:*
 
 ```bash
 npm install lucide-react
 ```
 
-## 🔨 Usage
+<br>
 
-Import components directly from the package. No extra CSS import is needed.
+## 🔨 Quick Usage
+
+Import components directly. No CSS import required.
 
 ```tsx
 import React from 'react';
-import { Button, Card, Input, Note } from '@ramox/rx-style';
+import { Button, Card, Input, Note, Tag } from '@ramox/rx-style';
+import { Zap } from 'lucide-react';
 
 export default function App() {
   return (
-    <div style={{ padding: 20, fontFamily: 'sans-serif' }}>
+    <div style={{ padding: 40, fontFamily: 'sans-serif' }}>
       <Card>
-        <h2>Welcome to Ramox</h2>
+        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 20 }}>
+           <h2>Welcome</h2>
+           <Tag icon={<Zap size={12}/>}>v5.1</Tag>
+        </div>
+
         <Note>This is a completely flat design system.</Note>
         
         <div style={{ margin: '20px 0' }}>
           <Input placeholder="Enter your email..." />
         </div>
 
-        <Button variant="solid" onClick={() => alert('Clicked!')}>
+        <Button variant="solid" fullWidth onClick={() => alert('Clicked!')}>
           Get Started
         </Button>
       </Card>
@@ -61,71 +103,60 @@ export default function App() {
 }
 ```
 
-## 🧩 Components
+<br>
 
-**General:**
+## 🧩 Components Catalog
 
-  - `Button` (Solid, Soft, Outline, Ghost)
-  - `Tag` & `Badge`
-  - `StatusDot` & `Note`
+\<div align="center"\>
 
-**Data Entry:**
+| **General** | **Data Entry** | **Feedback** | **Display & Media** |
+| :--- | :--- | :--- | :--- |
+| `Button` | `Input` | `Modal` | `Card` |
+| `Tag` | `Textarea` | `Drawer` | `Table` |
+| `Badge` | `Select` | `Alert` | `Timeline` |
+| `StatusDot` | `Switch` | `Toast` | `Chart` |
+| `Note` | `Checkbox` | `Skeleton` | `Glass` |
+| | `Radio` | `Loading` | `VideoPlayer` |
+| | `Slider` | `Tooltip` | `Avatar` |
+| | `Rating` | | `ImageBox` |
+| | `FileUploader` | | `CodeSnippet` |
+| | `DatePicker` | | |
 
-  - `Input` & `Textarea`
-  - `Select` (Custom Dropdown)
-  - `Switch`, `Checkbox`, `Radio`
-  - `Slider` & `Rating`
-  - `FileUploader` (Drag & Drop)
-  - `DatePicker`
+\</div\>
 
-**Feedback & Overlay:**
+<br>
 
-  - `Modal` (Zoom animation)
-  - `Drawer` (Slide animation)
-  - `Alert` & `Toast`
-  - `Skeleton` & `Loading`
-  - `Tooltip`
+## 🎨 Theming & Customization
 
-**Data Display:**
+### 🔤 Typography
 
-  - `Card`
-  - `Table` (Responsive)
-  - `Timeline`
-  - `Chart` (Simple Bar Chart)
-  - `Glass` (Backdrop Blur Container)
-
-**Media:**
-
-  - `VideoPlayer` (Custom SVG Controls)
-  - `Avatar` & `AvatarGroup`
-  - `ImageBox`
-  - `CodeSnippet`
-
-## 🎨 Theming
-
-### Fonts
-
-Ramox UI does not load any fonts. It uses `font-family: inherit`. To set a font, simply apply it to your global CSS:
+Ramox UI is **font-agnostic**. It does not load any fonts to keep the bundle size small. It inherits `font-family` from your body tag.
 
 ```css
 /* globals.css */
 body {
-  /* Example using Inter or Vazirmatn */
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', 'Vazirmatn', sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 ```
 
-### Dark Mode
+### 🌗 Dark Mode
 
-Dark mode works out of the box using CSS `@media (prefers-color-scheme: dark)`.
+Dark mode works **out of the box** using CSS `@media (prefers-color-scheme: dark)`.
 
-  - **Light Mode:** White backgrounds, black accents, \#f4f4f5 surfaces.
-  - **Dark Mode:** Black backgrounds, white accents, \#18181b surfaces.
+  * **Light Mode:** White backgrounds, black accents, `#f4f4f5` surfaces.
+  * **Dark Mode:** Black backgrounds, white accents, `#18181b` surfaces.
 
-## 🤝 Contributing
+<br>
 
-Contributions are welcome\! Please feel free to submit a Pull Request.
+-----
 
-## 📄 License
+\<div align="center"\>
 
-This project is licensed under the MIT License.
+**Ramox UI** is open source software licensed as MIT.
+
+\<a href="https://www.google.com/search?q=https://github.com/ramoooox/ramox-style"\>
+\<img src="https://www.google.com/search?q=https://img.shields.io/badge/View\_on-GitHub-black%3Fstyle%3Dflat-square%26logo%3Dgithub" alt="GitHub" /\>
+\</a\>
+
+\</div\>
