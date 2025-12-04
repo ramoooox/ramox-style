@@ -1,10 +1,10 @@
  #RAMOX_UI
 
-\<div align="center"\>
-\<img src="rx.png" alt="Ramox UI Logo" width="150" /\>
-<br>
-<br>
-\</div\>
+<div align="center">
+  <img src="./rx.png" alt="Ramox UI Logo" width="150" />
+  <br/>
+  <br/>
+</div>
 
 **The Ultra-Flat, Precision Design System for Next.js**
 
