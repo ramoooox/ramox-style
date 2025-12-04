@@ -1,13 +1,18 @@
 ````markdown
 # Ramox UI
 
-<img src="./rx.png" width="150" alt="Ramox UI Logo" />
+<div align="center">
+  <img src="./rx.png" width="150" alt="Ramox UI Logo" />
+</div>
+
+<br />
 
 **The Ultra-Flat, Precision Design System for Next.js**
 
-![Version](https://img.shields.io/badge/version-5.1.1-black)
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Style](https://img.shields.io/badge/style-Pill_Shape-success)
+![Version](https://img.shields.io/badge/version-5.1.1-black?style=flat-square)
+![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
+![Style](https://img.shields.io/badge/style-Pill_Shape-success?style=flat-square)
+![Size](https://img.shields.io/badge/size-Lightweight-orange?style=flat-square)
 
 **Ramox UI** is a lightweight, zero-runtime React component library designed specifically for **Next.js** applications deployed on platforms like **Cloudflare Pages**. It features a "Flat Precision" aesthetic with fully rounded (pill-shaped) elements, matte finishes, and zero layout shifts.
 
